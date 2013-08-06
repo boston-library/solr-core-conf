@@ -59,12 +59,16 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_corporate_tsim
           subject_name_personal_tsim
           subject_geographic_tsim
+          subject_geo_country_tsim
+          subject_geo_state_tsim
+          subject_geo_county_tsim
+          subject_geo_city_tsim
+          subject_geo_citysection_tsim
           related_item_host_tsim
           related_item_series_tsim
           identifier_local_other_tsim
           local_accession_id_tsim
           extent_tsi
-          institution_name_ssim
           institution_name_tsim
           institution_pid_ssi
         </str>
@@ -88,6 +92,11 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_corporate_tsim
           subject_name_personal_tsim
           subject_geographic_tsim
+          subject_geo_country_tsim
+          subject_geo_state_tsim
+          subject_geo_county_tsim
+          subject_geo_city_tsim
+          subject_geo_citysection_tsim
        </str>
        <str name="subject_pf">
        </str>
