@@ -115,7 +115,7 @@ http://wiki.apache.org/solr/LocalParams
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>
        <str name="spellcheck.onlyMorePopular">true</str>
-       <str name="spellcheck.extendedResults">true</str>
+       <str name="spellcheck.extendedResults">false</str>
        <str name="spellcheck.collate">false</str>
        <str name="spellcheck.count">5</str>
 
@@ -173,9 +173,12 @@ http://wiki.apache.org/solr/LocalParams
 -->
     <lst name="spellchecker">
       <str name="name">default</str>
+      <!-- using DirectSolrSpellChecker as doesn't require rebuilds -->
+      <str name="classname">solr.DirectSolrSpellChecker</str>
       <str name="field">spell</str>
-      <str name="spellcheckIndexDir">./spell</str>
-      <str name="buildOnOptimize">true</str>
+      <!-- don't need separate index or build with DirectSolrSpellChecker -->
+      <!-- <str name="spellcheckIndexDir">./spell</str> -->
+      <!-- <str name="buildOnOptimize">true</str> -->
     </lst>
   </searchComponent>
   
