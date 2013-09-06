@@ -60,10 +60,15 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_personal_tsim
           subject_geographic_tsim
           subject_geo_country_tsim
+          subject_geo_province_tsim
+          subject_geo_region_tsim
           subject_geo_state_tsim
+          subject_geo_territory_tsim
           subject_geo_county_tsim
           subject_geo_city_tsim
           subject_geo_citysection_tsim
+          subject_geo_island_tsim
+          subject_geo_area_tsim
           related_item_host_tsim
           related_item_series_tsim
           identifier_local_other_tsim
@@ -93,10 +98,15 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_personal_tsim
           subject_geographic_tsim
           subject_geo_country_tsim
+          subject_geo_province_tsim
+          subject_geo_region_tsim
           subject_geo_state_tsim
+          subject_geo_territory_tsim
           subject_geo_county_tsim
           subject_geo_city_tsim
           subject_geo_citysection_tsim
+          subject_geo_island_tsim
+          subject_geo_area_tsim
        </str>
        <str name="subject_pf">
        </str>
