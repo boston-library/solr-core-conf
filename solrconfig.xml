@@ -55,6 +55,7 @@ http://wiki.apache.org/solr/LocalParams
           collection_name_tsim
           physical_location_tsim
           sub_location_tsim
+          shelf_locator_tsim
           subject_topic_tsim
           subject_name_corporate_tsim
           subject_name_personal_tsim
