@@ -52,6 +52,7 @@ http://wiki.apache.org/solr/LocalParams
           date_start_tsim
           date_end_tsim
           note_tsim
+          note_resp_tsim
           collection_name_tsim
           physical_location_tsim
           sub_location_tsim
@@ -85,6 +86,7 @@ http://wiki.apache.org/solr/LocalParams
        <str name="author_qf">
           name_personal_tsim
           name_corporate_tsim
+          note_resp_tsim
        </str>
        <str name="author_pf">
        </str>
