@@ -53,6 +53,7 @@ http://wiki.apache.org/solr/LocalParams
           date_end_tsim
           note_tsim
           note_resp_tsim
+          note_date_tsim
           collection_name_tsim
           physical_location_tsim
           sub_location_tsim
