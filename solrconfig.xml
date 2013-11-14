@@ -72,6 +72,8 @@ http://wiki.apache.org/solr/LocalParams
           subject_geo_citysection_tsim
           subject_geo_island_tsim
           subject_geo_area_tsim
+          subject_temporal_start_tsim
+          subject_temporal_end_tsim
           related_item_host_tsim
           related_item_series_tsim
           identifier_local_other_tsim
@@ -111,6 +113,8 @@ http://wiki.apache.org/solr/LocalParams
           subject_geo_citysection_tsim
           subject_geo_island_tsim
           subject_geo_area_tsim
+          subject_temporal_start_tsim
+          subject_temporal_end_tsim
        </str>
        <str name="subject_pf">
        </str>
