@@ -45,6 +45,7 @@ http://wiki.apache.org/solr/LocalParams
           name_personal_role_tsim
           name_corporate_tsim
           name_corporate_role_tsim
+          name_generic_tsim
           abstract_tsim
           genre_basic_tsim
           genre_specific_tsim
@@ -89,6 +90,7 @@ http://wiki.apache.org/solr/LocalParams
        <str name="author_qf">
           name_personal_tsim
           name_corporate_tsim
+          name_generic_tsim
           note_resp_tsim
        </str>
        <str name="author_pf">
