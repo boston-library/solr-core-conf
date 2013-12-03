@@ -69,7 +69,7 @@ These are hard coded in places in hydra-head, but we hope to fix that.
     <dynamicField name="*_ssm" type="string" stored="true" indexed="false" multiValued="true"/>
     <dynamicField name="*_ssi" type="string" stored="true" indexed="true" multiValued="false"/>
     <dynamicField name="*_ssim" type="string" stored="true" indexed="true" multiValued="true"/>
-    <dynamicField name="*_ssort" type="alphaSort" stored="false" indexed="true" multiValued="false"/>
+    <dynamicField name="*_ssort" type="titleSort" stored="false" indexed="true" multiValued="false"/>
     
     <!-- integer (_i...) -->
     <dynamicField name="*_ii" type="int" stored="false" indexed="true" multiValued="false"/>
@@ -398,6 +398,18 @@ http://wiki.apache.org/solr/SolrAdaptersForLuceneSpatial4
         <filter class="solr.TrimFilterFactory" />
       </analyzer>
     </fieldtype>
+
+    <!-- a custom sort field that removes non-alphanumeric chars, since alphaSort doesn't -->
+    <fieldType name="titleSort" class="solr.TextField" sortMissingLast="true" omitNorms="true">
+      <analyzer>
+        <tokenizer class="solr.KeywordTokenizerFactory"/>
+        <filter class="solr.ICUFoldingFilterFactory" />
+        <filter class="solr.TrimFilterFactory" />
+        <filter class="solr.PatternReplaceFilterFactory"
+                pattern="([^a-z0-9])" replacement="" replace="all"
+        />
+      </analyzer>
+    </fieldType>
     
     <!-- A text field with defaults appropriate for English -->
     <fieldType name="text_en" class="solr.TextField" positionIncrementGap="100">
