@@ -41,10 +41,13 @@ http://wiki.apache.org/solr/LocalParams
           active_fedora_model_ssim
           object_type_si
           title_info_primary_tsi
+          title_info_alternative_tsim
+          subtitle_tsim
           name_personal_tsim
           name_personal_role_tsim
           name_corporate_tsim
           name_corporate_role_tsim
+          name_generic_tsim
           abstract_tsim
           genre_basic_tsim
           genre_specific_tsim
@@ -72,6 +75,8 @@ http://wiki.apache.org/solr/LocalParams
           subject_geo_citysection_tsim
           subject_geo_island_tsim
           subject_geo_area_tsim
+          subject_temporal_start_tsim
+          subject_temporal_end_tsim
           related_item_host_tsim
           related_item_series_tsim
           identifier_local_other_tsim
@@ -87,12 +92,15 @@ http://wiki.apache.org/solr/LocalParams
        <str name="author_qf">
           name_personal_tsim
           name_corporate_tsim
+          name_generic_tsim
           note_resp_tsim
        </str>
        <str name="author_pf">
        </str>
        <str name="title_qf">
           title_info_primary_tsi
+          title_info_alternative_tsim
+          subtitle_tsim
        </str>
        <str name="title_pf">
        </str>
@@ -111,6 +119,8 @@ http://wiki.apache.org/solr/LocalParams
           subject_geo_citysection_tsim
           subject_geo_island_tsim
           subject_geo_area_tsim
+          subject_temporal_start_tsim
+          subject_temporal_end_tsim
        </str>
        <str name="subject_pf">
        </str>
