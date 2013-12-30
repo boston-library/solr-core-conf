@@ -54,6 +54,7 @@ http://wiki.apache.org/solr/LocalParams
           publisher_tsim
           date_start_tsim
           date_end_tsim
+          table_of_contents_tsi
           note_tsim
           note_resp_tsim
           note_date_tsim
