@@ -80,8 +80,11 @@ http://wiki.apache.org/solr/LocalParams
           subject_temporal_end_tsim
           related_item_host_tsim
           related_item_series_tsim
+          related_item_subseries_tsim
+          related_item_subsubseries_tsim
           identifier_local_other_tsim
           local_accession_id_tsim
+          identifier_local_call_tsim
           extent_tsi
           institution_name_tsim
           institution_pid_ssi
