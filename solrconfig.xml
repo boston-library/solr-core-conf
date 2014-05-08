@@ -88,6 +88,7 @@ http://wiki.apache.org/solr/LocalParams
           identifier_local_other_tsim
           local_accession_id_tsim
           identifier_local_call_tsim
+          identifier_local_barcode_tsim
           extent_tsi
           institution_name_tsim
           institution_pid_ssi
