@@ -406,7 +406,7 @@ http://wiki.apache.org/solr/SolrAdaptersForLuceneSpatial4
         <filter class="solr.ICUFoldingFilterFactory" />
         <filter class="solr.TrimFilterFactory" />
         <filter class="solr.PatternReplaceFilterFactory"
-                pattern="([^a-z0-9\s])" replacement="" replace="all"
+                pattern="(^[^a-z0-9]*)|([^a-z0-9\s])" replacement="" replace="all"
         />
       </analyzer>
     </fieldType>
