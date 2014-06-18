@@ -208,6 +208,11 @@ http://wiki.apache.org/solr/LocalParams
       <str name="echoParams">all</str>
       <str name="fl">*</str>
       <str name="rows">1</str>
+      <str name="mlt">true</str>
+      <str name="mlt.fl">subject_facet_ssim,title_info_primary_tsi,subject_geo_city_ssim,genre_specific_ssim,genre_basic_ssim</str>
+      <str name="mlt.count">4</str>
+      <str name="mlt.mintf">1</str>
+      <str name="mlt.qf">subject_facet_ssim^5</str>
       <str name="q">{!raw f=id v=$id}</str> <!-- use id=666 instead of q=id:666 -->
     </lst>
   </requestHandler>
