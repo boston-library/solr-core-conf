@@ -216,7 +216,22 @@ http://wiki.apache.org/solr/LocalParams
       <str name="q">{!raw f=id v=$id}</str> <!-- use id=666 instead of q=id:666 -->
     </lst>
   </requestHandler>
-
+  
+  <!-- totally experimental, for "more like this" link in catalog#show -->
+  <requestHandler name="mlt" class="solr.MoreLikeThisHandler">
+    <lst name="defaults">
+      <str name="fl">
+         *,
+         score
+      </str>
+      <str name="echoParams">explicit</str>
+      <str name="mlt.match.include">false</str>
+      <str name="mlt.mintf">1</str>
+      <str name="mlt.fl">subject_facet_ssim,subject_geo_city_ssim,genre_specific_ssim,genre_basic_ssim</str>
+      <str name="mlt.qf">subject_facet_ssim^5</str>
+      <str name="q">{!raw f=id v=$id}</str>
+    </lst>
+  </requestHandler>
 
   <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
     <str name="queryAnalyzerFieldType">textSpell</str>
