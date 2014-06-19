@@ -224,6 +224,8 @@ http://wiki.apache.org/solr/LocalParams
          *,
          score
       </str>
+      <str name="facet">true</str>
+      <str name="facet.mincount">1</str>
       <str name="echoParams">explicit</str>
       <str name="mlt.match.include">false</str>
       <str name="mlt.mintf">1</str>
