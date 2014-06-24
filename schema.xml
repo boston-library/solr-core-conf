@@ -19,6 +19,10 @@ as well as the default schema file included with Solr -->
 <field name="has_model_s" type="string" stored="true" indexed="true"/>
 <field name="is_governed_by_s" type="string" stored="true" indexed="true"/>
 
+    <!-- defining these fields explicitly so termVectors can be used for better mlt results -->
+    <field name="subject_facet_ssim" type="string" stored="true" indexed="true" multiValued="true" termVectors="true"/>
+    <field name="subject_geo_city_ssim" type="string" stored="true" indexed="true" multiValued="true" termVectors="true"/>
+
 <!--
 These are hard coded in places in hydra-head, but we hope to fix that.
 <field name="inheritable_discover_access_person_t" type="string" stored="true" indexed="true" multiValued="true"/>
