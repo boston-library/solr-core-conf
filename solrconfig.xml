@@ -60,6 +60,7 @@ http://wiki.apache.org/solr/LocalParams
           note_tsim
           note_resp_tsim
           note_date_tsim
+          note_performers_tsim
           collection_name_tsim
           physical_location_tsim
           sub_location_tsim
@@ -81,6 +82,7 @@ http://wiki.apache.org/solr/LocalParams
           subject_scale_tsim
           subject_temporal_start_tsim
           subject_temporal_end_tsim
+          subject_title_tsim
           related_item_host_tsim
           related_item_series_tsim
           related_item_subseries_tsim
@@ -129,6 +131,7 @@ http://wiki.apache.org/solr/LocalParams
           subject_geo_area_tsim
           subject_temporal_start_tsim
           subject_temporal_end_tsim
+          subject_title_tsim
        </str>
        <str name="subject_pf">
        </str>
