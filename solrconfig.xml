@@ -61,6 +61,9 @@ http://wiki.apache.org/solr/LocalParams
           note_resp_tsim
           note_date_tsim
           note_performers_tsim
+          note_acquisition_tsim
+          note_ownership_tsim
+          note_citation_tsim
           collection_name_tsim
           physical_location_tsim
           sub_location_tsim
