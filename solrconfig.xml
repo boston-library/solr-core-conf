@@ -282,6 +282,10 @@ http://wiki.apache.org/solr/LocalParams
   </admin>
   
   <updateHandler class="solr.DirectUpdateHandler2">
+  
+    <updateLog>
+      <str name="dir">${solr.ulog.dir:}</str>
+    </updateLog>
 
     <autoCommit> 
       <maxTime>86400000</maxTime>
