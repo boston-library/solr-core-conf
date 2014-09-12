@@ -281,4 +281,14 @@ http://wiki.apache.org/solr/LocalParams
     <defaultQuery>search</defaultQuery>
   </admin>
   
+  <updateHandler class="solr.DirectUpdateHandler2">
+
+    <autoCommit> 
+      <maxTime>86400000</maxTime>
+      <maxDocs>2000</maxDocs> 
+      <openSearcher>true</openSearcher>
+    </autoCommit>
+
+  </updateHandler>
+  
 </config>
