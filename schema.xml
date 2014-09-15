@@ -22,6 +22,9 @@ as well as the default schema file included with Solr -->
     <!-- defining these fields explicitly so termVectors can be used for better mlt results -->
     <field name="subject_facet_ssim" type="string" stored="true" indexed="true" multiValued="true" termVectors="true"/>
     <field name="subject_geo_city_ssim" type="string" stored="true" indexed="true" multiValued="true" termVectors="true"/>
+    
+    <!-- _version_ field is needed for transaction logging -->
+    <field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/> 
 
 <!--
 These are hard coded in places in hydra-head, but we hope to fix that.
