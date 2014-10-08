@@ -91,6 +91,7 @@ http://wiki.apache.org/solr/LocalParams
           related_item_subseries_tsim
           related_item_subsubseries_tsim
           identifier_local_other_tsim
+          identifier_local_other_invalid_tsim
           local_accession_id_tsim
           identifier_local_call_tsim
           identifier_local_barcode_tsim
