@@ -74,16 +74,6 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_corporate_tsim
           subject_name_personal_tsim
           subject_geographic_tsim
-          subject_geo_country_tsim
-          subject_geo_province_tsim
-          subject_geo_region_tsim
-          subject_geo_state_tsim
-          subject_geo_territory_tsim
-          subject_geo_county_tsim
-          subject_geo_city_tsim
-          subject_geo_citysection_tsim
-          subject_geo_island_tsim
-          subject_geo_area_tsim
           subject_scale_tsim
           subject_temporal_start_tsim
           subject_temporal_end_tsim
@@ -126,16 +116,6 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_corporate_tsim
           subject_name_personal_tsim
           subject_geographic_tsim
-          subject_geo_country_tsim
-          subject_geo_province_tsim
-          subject_geo_region_tsim
-          subject_geo_state_tsim
-          subject_geo_territory_tsim
-          subject_geo_county_tsim
-          subject_geo_city_tsim
-          subject_geo_citysection_tsim
-          subject_geo_island_tsim
-          subject_geo_area_tsim
           subject_temporal_start_tsim
           subject_temporal_end_tsim
           subject_title_tsim
@@ -144,16 +124,6 @@ http://wiki.apache.org/solr/LocalParams
        </str>
        <str name="place_qf">
           subject_geographic_tsim
-          subject_geo_country_tsim
-          subject_geo_province_tsim
-          subject_geo_region_tsim
-          subject_geo_state_tsim
-          subject_geo_territory_tsim
-          subject_geo_county_tsim
-          subject_geo_city_tsim
-          subject_geo_citysection_tsim
-          subject_geo_island_tsim
-          subject_geo_area_tsim
        </str>
        <str name="place_pf">
        </str>
