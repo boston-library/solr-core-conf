@@ -41,6 +41,7 @@ http://wiki.apache.org/solr/LocalParams
           active_fedora_model_ssim
           object_type_si
           title_info_primary_tsi
+          title_info_primary_trans_tsi
           title_info_alternative_tsim
           subtitle_tsim
           name_personal_tsim
@@ -64,6 +65,7 @@ http://wiki.apache.org/solr/LocalParams
           note_acquisition_tsim
           note_ownership_tsim
           note_citation_tsim
+          note_reference_tsim
           collection_name_tsim
           physical_location_tsim
           sub_location_tsim
@@ -113,6 +115,7 @@ http://wiki.apache.org/solr/LocalParams
        </str>
        <str name="title_qf">
           title_info_primary_tsi
+          title_info_primary_trans_tsi
           title_info_alternative_tsim
           subtitle_tsim
        </str>
