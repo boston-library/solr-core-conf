@@ -43,6 +43,7 @@ http://wiki.apache.org/solr/LocalParams
           title_info_primary_tsi
           title_info_primary_trans_tsim
           title_info_alternative_tsim
+          title_info_translated_tsim
           subtitle_tsim
           name_personal_tsim
           name_personal_role_tsim
@@ -107,6 +108,7 @@ http://wiki.apache.org/solr/LocalParams
           title_info_primary_tsi
           title_info_primary_trans_tsim
           title_info_alternative_tsim
+          title_info_translated_tsim
           subtitle_tsim
        </str>
        <str name="title_pf">
