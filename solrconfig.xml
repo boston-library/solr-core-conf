@@ -91,6 +91,8 @@ http://wiki.apache.org/solr/LocalParams
           extent_tsi
           institution_name_tsim
           institution_pid_ssi
+          ocr_tiv
+          ocr_tsiv
         </str>
         <str name="pf">
           all_text_timv^10
