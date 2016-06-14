@@ -228,6 +228,30 @@ http://wiki.apache.org/solr/LocalParams
     </lst>
   </requestHandler>
 
+  <!-- suggest searchComponent for autocomplete -->
+  <searchComponent name="suggest" class="solr.SuggestComponent">
+        <lst name="suggester">
+      <str name="name">mySuggester</str>
+      <str name="lookupImpl">FSTLookupFactory</str>
+      <str name="buildOnCommit">true</str>   
+      <str name="dictionaryImpl">DocumentDictionaryFactory</str>
+      <str name="field">title_info_primary_tsi</str>
+      <str name="weightField">title_info_primary_tsi</str> <!-- just guessing here! -->
+    </lst>
+  </searchComponent>
+
+  <!-- suggest requestHandler for autocomplete -->
+  <requestHandler name="/suggest" class="solr.SearchHandler" startup="lazy">
+    <lst name="defaults">
+      <str name="suggest">true</str>
+      <str name="suggest.count">10</str>
+      <str name="suggest.dictionary">DocumentDictionaryFactory</str>
+    </lst>
+    <arr name="components">
+      <str>suggest</str>
+    </arr>
+  </requestHandler>
+
   <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
     <str name="queryAnalyzerFieldType">textSpell</str>
     <!-- Multiple "Spell Checkers" can be declared and used by this component
