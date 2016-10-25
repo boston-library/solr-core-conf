@@ -201,11 +201,11 @@ http://wiki.apache.org/solr/LocalParams
       <str name="echoParams">all</str>
       <str name="fl">*</str>
       <str name="rows">1</str>
-      <str name="mlt">true</str>
+      <!-- <str name="mlt">true</str>
       <str name="mlt.fl">subject_facet_ssim,subject_geo_city_ssim,related_item_host_ssim,title_info_primary_tsi</str>
       <str name="mlt.count">4</str>
       <str name="mlt.mintf">1</str>
-      <str name="mlt.qf">subject_facet_ssim^10 subject_geo_city_ssim^5 related_item_host_ssim^3</str>
+      <str name="mlt.qf">subject_facet_ssim^10 subject_geo_city_ssim^5 related_item_host_ssim^3</str> -->
       <str name="q">{!raw f=id v=$id}</str> <!-- use id=666 instead of q=id:666 -->
     </lst>
   </requestHandler>
@@ -217,13 +217,13 @@ http://wiki.apache.org/solr/LocalParams
          *,
          score
       </str>
-      <str name="facet">true</str>
+      <!-- <str name="facet">true</str> -->
       <str name="facet.mincount">1</str>
       <str name="echoParams">explicit</str>
-      <str name="mlt.match.include">false</str>
+      <!-- <str name="mlt.match.include">false</str>
       <str name="mlt.mintf">1</str>
       <str name="mlt.fl">subject_facet_ssim,subject_geo_city_ssim,related_item_host_ssim</str>
-      <str name="mlt.qf">subject_facet_ssim^5</str>
+      <str name="mlt.qf">subject_facet_ssim^5</str> -->
       <str name="q">{!raw f=id v=$id}</str>
     </lst>
   </requestHandler>
