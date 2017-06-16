@@ -40,7 +40,7 @@ http://wiki.apache.org/solr/LocalParams
           all_text_timv
           active_fedora_model_ssim
           object_type_si
-          title_info_primary_tsi^100
+          title_info_primary_tsi^200
           title_info_primary_trans_tsim^80
           title_info_alternative_tsim^80
           title_info_translated_tsim^80
@@ -77,6 +77,7 @@ http://wiki.apache.org/solr/LocalParams
           subject_name_personal_tsim^50
           subject_geographic_tsim^50
           subject_scale_tsim
+          subject_projection_tsim
           subject_temporal_start_tsim
           subject_temporal_end_tsim
           subject_title_tsim^50
@@ -109,7 +110,7 @@ http://wiki.apache.org/solr/LocalParams
        <str name="author_pf">
        </str>
        <str name="title_qf">
-          title_info_primary_tsi^100
+          title_info_primary_tsi^200
           title_info_primary_trans_tsim^80
           title_info_alternative_tsim^80
           title_info_translated_tsim^80
