@@ -40,11 +40,11 @@ http://wiki.apache.org/solr/LocalParams
           all_text_timv
           active_fedora_model_ssim
           object_type_si
-          title_info_primary_tsi^200
-          title_info_primary_trans_tsim^80
-          title_info_alternative_tsim^80
-          title_info_translated_tsim^80
-          title_info_uniform_tsim^80
+          title_info_primary_tsi^500
+          title_info_primary_trans_tsim^100
+          title_info_alternative_tsim^100
+          title_info_translated_tsim^100
+          title_info_uniform_tsim^50
           subtitle_tsim^80
           name_personal_tsim^20
           name_personal_role_tsim
@@ -72,15 +72,15 @@ http://wiki.apache.org/solr/LocalParams
           physical_location_tsim^20
           sub_location_tsim
           shelf_locator_tsim
-          subject_topic_tsim^50
-          subject_name_corporate_tsim^50
-          subject_name_personal_tsim^50
-          subject_geographic_tsim^50
+          subject_topic_tsim^100
+          subject_name_corporate_tsim^100
+          subject_name_personal_tsim^100
+          subject_geographic_tsim^100
           subject_scale_tsim
           subject_projection_tsim
           subject_temporal_start_tsim
           subject_temporal_end_tsim
-          subject_title_tsim^50
+          subject_title_tsim^100
           related_item_host_tsim^10
           related_item_series_tsim^10
           related_item_subseries_tsim^10
@@ -110,30 +110,30 @@ http://wiki.apache.org/solr/LocalParams
        <str name="author_pf">
        </str>
        <str name="title_qf">
-          title_info_primary_tsi^200
-          title_info_primary_trans_tsim^80
-          title_info_alternative_tsim^80
-          title_info_translated_tsim^80
-          title_info_uniform_tsim^80
+          title_info_primary_tsi^500
+          title_info_primary_trans_tsim^100
+          title_info_alternative_tsim^100
+          title_info_translated_tsim^100
+          title_info_uniform_tsim^50
           subtitle_tsim^80
        </str>
        <str name="title_pf">
        </str>
        <str name="subject_qf">
-          subject_topic_tsim^50
-          subject_name_corporate_tsim^50
-          subject_name_personal_tsim^50
-          subject_geographic_tsim^50
+          subject_topic_tsim^100
+          subject_name_corporate_tsim^100
+          subject_name_personal_tsim^100
+          subject_geographic_tsim^100
           subject_temporal_start_tsim
           subject_temporal_end_tsim
-          subject_title_tsim^50
+          subject_title_tsim^100
        </str>
        <str name="subject_pf">
        </str>
        <str name="place_qf">
-          subject_geographic_tsim^50
-          subject_topic_tsim^20
-          title_info_primary_tsi^10
+          subject_geographic_tsim^200
+          subject_topic_tsim^50
+          title_info_primary_tsi^20
           subtitle_tsim^5
           abstract_tsim^5
           table_of_contents_tsi^5
