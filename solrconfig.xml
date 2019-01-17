@@ -123,13 +123,13 @@ http://wiki.apache.org/solr/LocalParams
           name_personal_tsim^20
           name_corporate_tsim^20
           name_generic_tsim^20
-          note_resp_tsim^20
+          note_resp_tsim
        </str>
        <str name="author_pf">
          name_personal_tsim^200
          name_corporate_tsim^200
          name_generic_tsim^200
-         note_resp_tsim^200
+         note_resp_tsim
        </str>
        <str name="title_qf">
           title_info_primary_tsi^500
@@ -164,7 +164,7 @@ http://wiki.apache.org/solr/LocalParams
          subject_title_tsim^1000
        </str>
        <str name="place_qf">
-          subject_geographic_tsim^200
+          subject_geographic_tsim^500
           subject_topic_tsim^50
           title_info_primary_tsi^20
           subtitle_tsim^5
@@ -319,7 +319,13 @@ http://wiki.apache.org/solr/LocalParams
   
   <requestHandler name="/analysis/field" startup="lazy" class="solr.FieldAnalysisRequestHandler" />
   <requestHandler name="/update" class="solr.UpdateRequestHandler" />
+
+  <!-- admin requestHandler def below causes Solr 7 to throw error on startup -->
+  <!-- org.apache.solr.handler.admin.AdminHandlers appears to be deprecated -->
+  <!-- doesn't seem to be used in Blacklight 6 or Hyrax, so leave it commented out -->
+  <!--
   <requestHandler name="/admin/" class="org.apache.solr.handler.admin.AdminHandlers" />
+  -->
   
   <requestHandler name="/admin/ping" class="solr.PingRequestHandler">
     <lst name="invariants">
