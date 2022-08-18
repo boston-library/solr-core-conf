@@ -52,6 +52,7 @@ http://wiki.apache.org/solr/LocalParams
           genre_basic_tim
           genre_specific_tim
           publisher_tsi^20
+          pubplace_tsi
           edition_name_tsim
           issuance_tsi
           date_tsim
@@ -98,7 +99,7 @@ http://wiki.apache.org/solr/LocalParams
           identifier_lccn_tsim
           identifier_ia_id_ssi
           extent_tsi
-          institution_name_tsi^10
+          institution_name_ti^10
           institution_ark_id_ssi
           filenames_ssim
           ocr_tiv^0.5
@@ -172,8 +173,9 @@ http://wiki.apache.org/solr/LocalParams
          title_info_other_subtitle_tsim^5
          abstract_tsi
          table_of_contents_tsi
-         institution_name_tsi^10
+         institution_name_ti^10
          physical_location_tim^10
+         pubplace_tsi
        </str>
        <str name="place_pf">
          subject_geographic_tim^2000
@@ -181,7 +183,7 @@ http://wiki.apache.org/solr/LocalParams
          title_info_primary_tsi^200
          title_info_primary_subtitle_tsi^50
          title_info_other_subtitle_tsim^50
-         institution_name_tsi^100
+         institution_name_ti^100
          physical_location_tim^100
        </str>
        
