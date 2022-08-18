@@ -24,9 +24,6 @@ as well as the default schema file included with Solr -->
     <field name="collection_name_ssim" type="string" stored="true" indexed="true" multiValued="true" docValues="true"/>
     <field name="physical_location_ssim" type="string" stored="true" indexed="true" multiValued="true" docValues="true"/>
 
-    <!-- defining sort field explicitly so we can add docValues="true" -->
-    <field name="title_info_primary_ssort" type="alphaSortNoPunc" stored="false" indexed="true" multiValued="false" docValues="true"/>
-    
     <!-- _version_ field is needed for transaction logging -->
     <field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
 
