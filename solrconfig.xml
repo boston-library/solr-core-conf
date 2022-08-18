@@ -72,6 +72,7 @@ http://wiki.apache.org/solr/LocalParams
           note_biographical_tsim^10
           note_publications_tsim^10
           note_credits_tsim^10
+          note_physical_tsim^10
           collection_name_tim^10
           physical_location_tim^20
           sub_location_tsi
