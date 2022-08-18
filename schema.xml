@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema name="Commonwealth" version="1.0">
+<schema name="Commonwealth: DC3" version="3.0">
   <!-- NOTE: various comments and unused configuration possibilities have been purged
 from this file. Please refer to http://wiki.apache.org/solr/SchemaXml,
 as well as the default schema file included with Solr -->
@@ -15,7 +15,7 @@ as well as the default schema file included with Solr -->
 
     <!-- defining these fields explicitly so termVectors can be used for better mlt results -->
     <field name="subject_facet_ssim" type="string" stored="true" indexed="true" multiValued="true" termVectors="true"/>
-    <field name="subject_geo_city_ssim" type="string" stored="true" indexed="true" multiValued="true" termVectors="true"/>
+    <field name="subject_geo_label_sim" type="string" stored="false" indexed="true" multiValued="true" termVectors="true"/>
     
     <!-- _version_ field is needed for transaction logging -->
     <field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
@@ -184,11 +184,11 @@ Optional fractional seconds are allowed: 1995-12-31T23:59:59.999Z -->
   <copyField source="collection_name_ssim" dest="suggest"/>
   <copyField source="genre_basic_ssim" dest="suggest"/>
   <copyField source="genre_specific_ssim" dest="suggest"/>
-  <copyField source="institution_name_ssim" dest="suggest"/>
+  <copyField source="institution_name_ssi" dest="suggest"/>
   <copyField source="name_facet_ssim" dest="suggest"/>
   <copyField source="physical_location_ssim" dest="suggest"/>
-  <copyField source="publisher_tsim" dest="suggest"/>
-  <copyField source="pubplace_tsim" dest="suggest"/>
+  <copyField source="publisher_tsi" dest="suggest"/>
+  <copyField source="pubplace_tsi" dest="suggest"/>
   <copyField source="related_item_host_ssim" dest="suggest"/>
   <copyField source="related_item_series_ssim" dest="suggest"/>
   <copyField source="related_item_subseries_ssim" dest="suggest"/>
@@ -196,7 +196,8 @@ Optional fractional seconds are allowed: 1995-12-31T23:59:59.999Z -->
   <copyField source="subject_geographic_ssim" dest="suggest"/>
   <copyField source="subject_facet_ssim" dest="suggest"/>
   <!--
-  <copyField source="subtitle_tsim" dest="suggest"/>
+  <copyField source="title_info_primary_subtitle_tsi" dest="suggest"/>
+  <copyField source="title_info_other_subtitle_tsim" dest="suggest"/>
   <copyField source="title_info_alternative_tsim" dest="suggest"/>
   <copyField source="title_info_uniform_tsim" dest="suggest"/>
   <copyField source="title_info_primary_trans_tsim" dest="suggest"/>
@@ -361,7 +362,6 @@ http://wiki.apache.org/solr/SolrAdaptersForLuceneSpatial4
       <analyzer>
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt"/>
-        <filter class="solr.StandardFilterFactory"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
       </analyzer>
@@ -378,7 +378,6 @@ http://wiki.apache.org/solr/SolrAdaptersForLuceneSpatial4
       <analyzer>
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt"/>
-        <filter class="solr.StandardFilterFactory"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.ShingleFilterFactory" maxShingleSize="4" fillerToken="" outputUnigramsIfNoShingles="true"/>
         <filter class="solr.PatternReplaceFilterFactory" pattern="(^ | $)" replacement=""/>

@@ -39,26 +39,23 @@ http://wiki.apache.org/solr/LocalParams
 -->
         <str name="qf">
           id
-          active_fedora_model_ssim
           title_info_primary_tsi^1000
           title_info_primary_trans_tsim^500
+          title_info_primary_subtitle_tsi^500
           title_info_alternative_tsim^500
           title_info_translated_tsim^500
           title_info_uniform_tsim^100
-          subtitle_tsim^100
-          name_personal_tsim^20
-          name_personal_role_tsim
-          name_corporate_tsim^20
-          name_corporate_role_tsim
-          name_generic_tsim^20
-          abstract_tsim^30
-          genre_basic_tsim
-          genre_specific_tsim
-          publisher_tsim^20
-          edition_tsim
-          issuance_tsim
-          date_start_tsim
-          date_end_tsim
+          title_info_other_subtitle_tsim^100
+          name_tsim^20
+          name_role_tsim
+          abstract_tsi^30
+          genre_basic_tim
+          genre_specific_tim
+          publisher_tsi^20
+          pubplace_tsi
+          edition_name_tsim
+          issuance_tsi
+          date_tsim
           table_of_contents_tsi^30
           note_tsim^10
           note_resp_tsim^20
@@ -68,23 +65,30 @@ http://wiki.apache.org/solr/LocalParams
           note_ownership_tsim^10
           note_citation_tsim^10
           note_reference_tsim^10
-          collection_name_tsim^10
-          physical_location_tsim^20
-          sub_location_tsim
-          shelf_locator_tsim
+          note_exhibitions_tsim^10
+          note_arrangement_tsim^10
+          note_language_tsim^10
+          note_funding_tsim^10
+          note_biographical_tsim^10
+          note_publications_tsim^10
+          note_credits_tsim^10
+          note_physical_tsim^10
+          collection_name_tim^10
+          physical_location_tim^20
+          sub_location_tsi
+          shelf_locator_tsi
           subject_topic_tsim^100
-          subject_name_corporate_tsim^100
-          subject_name_personal_tsim^100
-          subject_geographic_tsim^100
-          subject_scale_tsim
-          subject_projection_tsim
-          subject_temporal_start_tsim
-          subject_temporal_end_tsim
+          subject_name_tsim^100
+          subject_geographic_tim^100
+          subject_temporal_tsim^50
+          scale_tsim
+          projection_tsi
+          subject_date_tsim
           subject_title_tsim^100
-          related_item_host_tsim^10
-          related_item_series_tsim^10
-          related_item_subseries_tsim^10
-          related_item_subsubseries_tsim^10
+          related_item_host_tim^10
+          related_item_series_ti^10
+          related_item_subseries_ti^10
+          related_item_subsubseries_ti^10
           identifier_local_other_tsim
           identifier_local_other_invalid_tsim
           identifier_local_accession_tsim
@@ -95,10 +99,9 @@ http://wiki.apache.org/solr/LocalParams
           identifier_isbn_tsim
           identifier_lccn_tsim
           identifier_ia_id_ssi
-          classification_tsim
           extent_tsi
-          institution_name_tsim^10
-          institution_pid_ssi
+          institution_name_ti^10
+          institution_ark_id_ssi
           filenames_ssim
           ocr_tiv^0.5
           ocr_tsiv^0.5
@@ -110,39 +113,33 @@ http://wiki.apache.org/solr/LocalParams
           title_info_translated_tsim^1000
           title_info_uniform_tsim^500
           subtitle_tsim^800
-          name_personal_tsim^200
-          name_corporate_tsim^200
-          name_generic_tsim^200
+          name_tsim^200
           subject_topic_tsim^1000
-          subject_name_corporate_tsim^1000
-          subject_name_personal_tsim^1000
-          subject_geographic_tsim^1000
+          subject_name_tsim^1000
+          subject_geographic_tim^1000
           subject_title_tsim^1000
-          related_item_host_tsim^100
-          related_item_series_tsim^100
-          related_item_subseries_tsim^100
-          related_item_subsubseries_tsim^100
+          related_item_host_tim^100
+          related_item_series_ti^100
+          related_item_subseries_ti^100
+          related_item_subsubseries_ti^100
         </str>
 
        <str name="author_qf">
-          name_personal_tsim^20
-          name_corporate_tsim^20
-          name_generic_tsim^20
-          note_resp_tsim
+         name_tsim^20
+         note_resp_tsim
        </str>
        <str name="author_pf">
-         name_personal_tsim^200
-         name_corporate_tsim^200
-         name_generic_tsim^200
+         name_tsim^200
          note_resp_tsim
        </str>
        <str name="title_qf">
-          title_info_primary_tsi^500
-          title_info_primary_trans_tsim^100
-          title_info_alternative_tsim^100
-          title_info_translated_tsim^100
-          title_info_uniform_tsim^50
-          subtitle_tsim^80
+         title_info_primary_tsi^500
+         title_info_primary_subtitle_tsi^80
+         title_info_primary_trans_tsim^100
+         title_info_alternative_tsim^100
+         title_info_translated_tsim^100
+         title_info_uniform_tsim^50
+         title_info_other_subtitle_tsim^80
        </str>
        <str name="title_pf">
          title_info_primary_tsi^5000
@@ -150,41 +147,45 @@ http://wiki.apache.org/solr/LocalParams
          title_info_alternative_tsim^1000
          title_info_translated_tsim^1000
          title_info_uniform_tsim^500
-         subtitle_tsim^800
+         title_info_primary_subtitle_tsi^800
+         title_info_other_subtitle_tsim^800
        </str>
        <str name="subject_qf">
-          subject_topic_tsim^100
-          subject_name_corporate_tsim^100
-          subject_name_personal_tsim^100
-          subject_geographic_tsim^100
-          subject_temporal_start_tsim
-          subject_temporal_end_tsim
-          subject_title_tsim^100
+         subject_topic_tsim^100
+         subject_name_tsim^100
+         subject_geographic_tim^100
+         subject_date_tsim
+         subject_temporal_tsim^50
+         subject_title_tsim^100
        </str>
        <str name="subject_pf">
          subject_topic_tsim^1000
-         subject_name_corporate_tsim^1000
-         subject_name_personal_tsim^1000
-         subject_geographic_tsim^1000
+         subject_name_tsim^1000
+         subject_geographic_tim^1000
          subject_title_tsim^1000
+         subject_date_tsim
+         subject_temporal_tsim^500
        </str>
        <str name="place_qf">
-          subject_geographic_tsim^500
-          subject_topic_tsim^50
-          title_info_primary_tsi^20
-          subtitle_tsim^5
-          abstract_tsim
-          table_of_contents_tsi
-          institution_name_tsim^10
-          physical_location_tsim^10
+         subject_geographic_tim^500
+         subject_topic_tsim^50
+         title_info_primary_tsi^20
+         title_info_primary_subtitle_tsi^5
+         title_info_other_subtitle_tsim^5
+         abstract_tsi
+         table_of_contents_tsi
+         institution_name_ti^10
+         physical_location_tim^10
+         pubplace_tsi
        </str>
        <str name="place_pf">
-         subject_geographic_tsim^2000
+         subject_geographic_tim^2000
          subject_topic_tsim^500
          title_info_primary_tsi^200
-         subtitle_tsim^50
-         institution_name_tsim^100
-         physical_location_tsim^100
+         title_info_primary_subtitle_tsi^50
+         title_info_other_subtitle_tsim^50
+         institution_name_ti^100
+         physical_location_tim^100
        </str>
        
        <str name="fl">
