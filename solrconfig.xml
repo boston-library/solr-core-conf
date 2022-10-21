@@ -317,7 +317,14 @@ http://wiki.apache.org/solr/LocalParams
     </lst>
   </searchComponent>
   
-  <requestHandler name="/replication" class="solr.ReplicationHandler" startup="lazy" />
+  <!-- <requestHandler name="/replication" class="solr.ReplicationHandler" startup="lazy" /> -->
+  <requestHandler name="/replication" class="solr.ReplicationHandler">
+    <lst>
+        <str name="replicateAfter">commit</str>
+        <str name="replicateAfter">startup</str>
+        <str name="confFiles">schema.xml,stopwords.txt</str>
+    </lst>
+  </requestHandler>
   
   <requestDispatcher handleSelect="true" >
     <requestParsers enableRemoteStreaming="true" multipartUploadLimitInKB="2048" />
