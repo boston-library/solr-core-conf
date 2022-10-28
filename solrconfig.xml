@@ -37,89 +37,90 @@ below, which the default blacklight_config will specify for
 those searches. You may also be interested in:
 http://wiki.apache.org/solr/LocalParams
 -->
-        <str name="qf">
-          id
-          title_info_primary_tsi^1000
-          title_info_primary_trans_tsim^500
-          title_info_primary_subtitle_tsi^500
-          title_info_alternative_tsim^500
-          title_info_translated_tsim^500
-          title_info_uniform_tsim^100
-          title_info_other_subtitle_tsim^100
-          name_tsim^20
-          name_role_tsim
-          abstract_tsi^30
-          genre_basic_tim
-          genre_specific_tim
-          publisher_tsi^20
-          pubplace_tsi
-          edition_name_tsim
-          issuance_tsi
-          date_tsim
-          table_of_contents_tsi^30
-          note_tsim^10
-          note_resp_tsim^20
-          note_date_tsim
-          note_performers_tsim^10
-          note_acquisition_tsim^10
-          note_ownership_tsim^10
-          note_citation_tsim^10
-          note_reference_tsim^10
-          note_exhibitions_tsim^10
-          note_arrangement_tsim^10
-          note_language_tsim^10
-          note_funding_tsim^10
-          note_biographical_tsim^10
-          note_publications_tsim^10
-          note_credits_tsim^10
-          note_physical_tsim^10
-          collection_name_tim^10
-          physical_location_tim^20
-          sub_location_tsi
-          shelf_locator_tsi
-          subject_topic_tsim^100
-          subject_name_tsim^100
-          subject_geographic_tim^100
-          subject_temporal_tsim^50
-          scale_tsim
-          projection_tsi
-          subject_date_tsim
-          subject_title_tsim^100
-          related_item_host_tim^10
-          related_item_series_ti^10
-          related_item_subseries_ti^10
-          related_item_subsubseries_ti^10
-          identifier_local_other_tsim
-          identifier_local_other_invalid_tsim
-          identifier_local_accession_tsim
-          identifier_local_call_tsim
-          identifier_local_call_invalid_tsim
-          identifier_local_barcode_tsim
-          identifier_local_barcode_invalid_tsim
-          identifier_isbn_tsim
-          identifier_lccn_tsim
-          identifier_ia_id_ssi
-          extent_tsi
-          institution_name_ti^10
-          institution_ark_id_ssi
-          filenames_ssim
-          lang_term_ssim
-        </str>
-        <str name="pf">
-          title_info_primary_tsi^5000
-          title_info_primary_trans_tsim^1000
-          title_info_alternative_tsim^1000
-          title_info_translated_tsim^1000
-          title_info_uniform_tsim^500
-          subtitle_tsim^800
-          name_tsim^200
-          subject_topic_tsim^1000
-          subject_name_tsim^1000
-          subject_geographic_tim^1000
-          subject_title_tsim^1000
-          related_item_*^100
-        </str>
+       <str name="qf">
+         id
+         title_info_primary_tsi^1000
+         title_info_primary_trans_tsim^500
+         title_info_primary_subtitle_tsi^500
+         title_info_alternative_tsim^500
+         title_info_translated_tsim^500
+         title_info_uniform_tsim^100
+         title_info_other_subtitle_tsim^100
+         name_tsim^20
+         name_role_tsim
+         abstract_tsi^30
+         genre_basic_tim
+         genre_specific_tim
+         publisher_tsi^20
+         pubplace_tsi
+         edition_name_tsim
+         issuance_tsi
+         date_tsim
+         table_of_contents_tsi^30
+         note_tsim^10
+         note_resp_tsim^20
+         note_date_tsim
+         note_performers_tsim^10
+         note_acquisition_tsim^10
+         note_ownership_tsim^10
+         note_citation_tsim^10
+         note_reference_tsim^10
+         note_exhibitions_tsim^10
+         note_arrangement_tsim^10
+         note_language_tsim^10
+         note_funding_tsim^10
+         note_biographical_tsim^10
+         note_publications_tsim^10
+         note_credits_tsim^10
+         note_physical_tsim^10
+         collection_name_tim^10
+         physical_location_tim^20
+         sub_location_tsi
+         shelf_locator_tsi
+         subject_topic_tsim^100
+         subject_name_tsim^100
+         subject_geographic_tim^100
+         subject_temporal_tsim^50
+         scale_tsim
+         projection_tsi
+         subject_date_tsim
+         subject_title_tsim^100
+         related_item_host_tim^10
+         related_item_series_ti^10
+         related_item_subseries_ti^10
+         related_item_subsubseries_ti^10
+         identifier_local_other_tsim
+         identifier_local_other_invalid_tsim
+         identifier_local_accession_tsim
+         identifier_local_call_tsim
+         identifier_local_call_invalid_tsim
+         identifier_local_barcode_tsim
+         identifier_local_barcode_invalid_tsim
+         identifier_isbn_tsim
+         identifier_lccn_tsim
+         identifier_ia_id_ssi
+         extent_tsi
+         institution_name_ti^10
+         institution_ark_id_ssi
+         filenames_ssim
+         lang_term_ssim
+       </str>
+       <str name="pf">
+         title_info_primary_tsi^5000
+         title_info_primary_trans_tsim^1000
+         title_info_alternative_tsim^1000
+         title_info_translated_tsim^1000
+         title_info_uniform_tsim^500
+         subtitle_tsim^800
+         name_tsim^200
+         subject_topic_tsim^1000
+         subject_name_tsim^1000
+         subject_geographic_tim^1000
+         subject_title_tsim^1000
+         related_item_*^100
+       </str>
 
+       <!-- same as the default qf, but with OCR text fields -->
        <str name="fulltext_qf">
          id
          title_info_primary_tsi^1000
@@ -190,6 +191,7 @@ http://wiki.apache.org/solr/LocalParams
          ocr_tiv
          ocr_tsiv
        </str>
+       <!-- same as default pf, but with OCR text fields -->
        <str name="fulltext_pf">
          title_info_primary_tsi^5000
          title_info_primary_trans_tsim^1000
@@ -203,7 +205,10 @@ http://wiki.apache.org/solr/LocalParams
          subject_geographic_tim^1000
          subject_title_tsim^1000
          related_item_*^100
+         ocr_tiv
+         ocr_tsiv
        </str>
+
        <str name="author_qf">
          name_tsim^20
          note_resp_tsim
@@ -212,6 +217,7 @@ http://wiki.apache.org/solr/LocalParams
          name_tsim^200
          note_resp_tsim
        </str>
+
        <str name="title_qf">
          title_info_primary_tsi^500
          title_info_primary_subtitle_tsi^80
@@ -230,6 +236,7 @@ http://wiki.apache.org/solr/LocalParams
          title_info_primary_subtitle_tsi^800
          title_info_other_subtitle_tsim^800
        </str>
+
        <str name="subject_qf">
          subject_topic_tsim^100
          subject_name_tsim^100
@@ -246,6 +253,7 @@ http://wiki.apache.org/solr/LocalParams
          subject_date_tsim
          subject_temporal_tsim^500
        </str>
+
        <str name="place_qf">
          subject_geographic_tim^500
          subject_topic_tsim^50
@@ -267,10 +275,16 @@ http://wiki.apache.org/solr/LocalParams
          institution_name_ti^100
          physical_location_tim^100
        </str>
+
        <str name="fulltext_only_qf">
          ocr_tiv
          ocr_tsiv
        </str>
+       <str name="fulltext_only_pf">
+         ocr_tiv
+         ocr_tsiv
+       </str>
+
        <str name="fl">
          *,
          score
