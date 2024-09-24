@@ -96,8 +96,17 @@ http://wiki.apache.org/solr/LocalParams
          identifier_local_call_invalid_tsim
          identifier_local_barcode_tsim
          identifier_local_barcode_invalid_tsim
-         identifier_isbn_tsim
-         identifier_lccn_tsim
+         identifier_isbn_ssim
+         identifier_lccn_ssim
+         identifier_issn_ssim
+         identifier_ismn_ssim
+         identifier_isrc_ssim
+         identifier_issue_number_ssim
+         identifier_matrix_number_ssim
+         identifier_music_plate_ssim
+         identifier_music_publisher_ssim
+         identifier_sici_ssim
+         identifier_videorecording_ssim
          identifier_ia_id_ssi
          extent_tsi
          institution_name_ti^10
@@ -180,8 +189,17 @@ http://wiki.apache.org/solr/LocalParams
          identifier_local_call_invalid_tsim
          identifier_local_barcode_tsim
          identifier_local_barcode_invalid_tsim
-         identifier_isbn_tsim
-         identifier_lccn_tsim
+         identifier_isbn_ssim
+         identifier_lccn_ssim
+         identifier_issn_ssim
+         identifier_ismn_ssim
+         identifier_isrc_ssim
+         identifier_issue_number_ssim
+         identifier_matrix_number_ssim
+         identifier_music_plate_ssim
+         identifier_music_publisher_ssim
+         identifier_sici_ssim
+         identifier_videorecording_ssim
          identifier_ia_id_ssi
          extent_tsi
          institution_name_ti^10
