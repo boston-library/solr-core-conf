@@ -120,7 +120,8 @@ http://wiki.apache.org/solr/LocalParams
          title_info_alternative_tsim^1000
          title_info_translated_tsim^1000
          title_info_uniform_tsim^500
-         subtitle_tsim^800
+         title_info_primary_subtitle_tsi^800
+         title_info_other_subtitle_tsim^500
          name_tsim^200
          subject_topic_tsim^1000
          subject_name_tsim^1000
@@ -216,7 +217,8 @@ http://wiki.apache.org/solr/LocalParams
          title_info_alternative_tsim^1000
          title_info_translated_tsim^1000
          title_info_uniform_tsim^500
-         subtitle_tsim^800
+         title_info_primary_subtitle_tsi^800
+         title_info_other_subtitle_tsim^500
          name_tsim^200
          subject_topic_tsim^1000
          subject_name_tsim^1000
