@@ -1305,7 +1305,7 @@ http://wiki.apache.org/solr/LocalParams
       <str name="dictionaryImpl">HighFrequencyDictionaryFactory</str>
       <!-- <float name="threshold">.00004</float> --> <!-- may need to tweak for production -->
       <str name="field">suggest</str>
-      <str name="suggestAnalyzerFieldType">textSuggest</str>
+      <str name="suggestAnalyzerFieldType">text_suggest</str>
       <str name="buildOnStartup">false</str>
       <str name="buildOnCommit">false</str>
       <str name="buildOnOptimize">false</str>
