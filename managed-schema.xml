@@ -115,7 +115,7 @@
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
     <field name="timestamp" type="pdate" indexed="true" stored="true" default="NOW" multiValued="false"/>
 
-    <field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
+    <field name="_version_" type="plong" indexed="true" stored="true" multiValued="false"/>
 
     <!-- If you don't use child/nested documents, then you should remove the next two fields:  -->
     <!-- for nested documents (minimal; points to root document) -->

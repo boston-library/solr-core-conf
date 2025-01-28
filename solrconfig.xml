@@ -1530,4 +1530,9 @@ http://wiki.apache.org/solr/LocalParams
     <defaultQuery>search</defaultQuery>
   </admin>
 
+  <!-- https://solr.apache.org/guide/solr/latest/deployment-guide/solrcloud-distributed-requests.html#distributedidf
+       ExactStatsCache uses global values (across the collection) for 
+       document frequency. It’s recommended to choose this option if 
+       precise scoring across nodes is important for your implementation -->
+  <statsCache class="org.apache.solr.search.stats.ExactStatsCache"/>
 </config>
