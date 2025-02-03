@@ -356,14 +356,16 @@
     -->
 
     <!-- single token analyzed text, for sorting. Punctuation is ignored. -->
-    <dynamicField name="*_ssort" type="alpha_sort_no_punc" stored="false" indexed="true" multiValued="false"/>
-    <fieldType name="alpha_sort_no_punc" class="solr.TextField" sortMissingLast="true" omitNorms="true">
+    <dynamicField name="*_ssort" type="alpha_sort_no_punc" stored="false" indexed="true" multiValued="false" uninvertible="true"/>
+    <fieldType name="alpha_sort_no_punc" class="solr.SortableTextField" sortMissingLast="true" omitNorms="true">
       <analyzer>
         <tokenizer name="keyword"/>
         <!-- To use icuFolding filter, you must add additional .jars to Solr’s classpath
              (as described in https://solr.apache.org/guide/solr/latest/configuration-guide/solr-plugins.html#installing-plugins).
              See solr/modules/analysis-extras/README.md for instructions on which jars
              you need to add. -->
+        <filter name="stop" ignoreCase="true" words="stopwords.txt" />
+        <filter name="lowercase"/>
         <filter name="icuFolding"/>
         <filter name="trim"/>
         <filter name="patternReplace" pattern="(^[^a-z0-9]*)|([^a-z0-9\s])" replacement="" replace="all"/>
