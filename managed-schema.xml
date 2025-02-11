@@ -177,7 +177,7 @@
                   termVectors="true" termPositions="true" termOffsets="true"/>
     <!-- *_tsiv used for indexing full-text in Curator::Filestreams::*
          stored so we can retrieve snippets/highlights -->
-    <dynamicField name="*_tsiv" type="text_plain" stored="true" indexed="true" multiValued="false"
+    <dynamicField name="*_tsiv" type="text_general" stored="true" indexed="true" multiValued="false"
                   termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_tsi" type="text_general" indexed="true" stored="true" multiValued="false"/>
     <dynamicField name="*_tsim" type="text_general" indexed="true" stored="true"/>
@@ -360,13 +360,16 @@
     <fieldType name="alpha_sort_no_punc" class="solr.SortableTextField" sortMissingLast="true" omitNorms="true">
       <analyzer>
         <tokenizer name="keyword"/>
+        <filter name="stop" ignoreCase="true" words="stopwords.txt" />
+        <filter name="asciiFolding" />
+        <filter name="lowercase"/>
         <!-- To use icuFolding filter, you must add additional .jars to Solr’s classpath
              (as described in https://solr.apache.org/guide/solr/latest/configuration-guide/solr-plugins.html#installing-plugins).
              See solr/modules/analysis-extras/README.md for instructions on which jars
              you need to add. -->
-        <filter name="stop" ignoreCase="true" words="stopwords.txt" />
-        <filter name="lowercase"/>
-        <filter name="icuFolding"/>
+        <!-- additional libs are tricky in Solr >= 9.8,
+             see: https://solr.apache.org/guide/solr/latest/configuration-guide/libs.html -->
+        <!-- <filter name="icuFolding"/> -->
         <filter name="trim"/>
         <filter name="patternReplace" pattern="(^[^a-z0-9]*)|([^a-z0-9\s])" replacement="" replace="all"/>
       </analyzer>
@@ -381,7 +384,6 @@
     </fieldType>
 
     <!-- copied from default Blacklight schema -->
-    <!-- TODO: figure out if this any good for OCR/transcribed text -->
     <fieldType name="text_plain" class="solr.TextField" positionIncrementGap="100">
       <analyzer>
         <tokenizer name="standard"/>
@@ -389,7 +391,9 @@
              (as described in https://solr.apache.org/guide/solr/latest/configuration-guide/solr-plugins.html#installing-plugins).
              See solr/modules/analysis-extras/README.md for instructions on which jars
              you need to add. -->
-        <filter name="icuFolding"/>
+        <!-- additional libs are tricky in Solr >= 9.8,
+             see: https://solr.apache.org/guide/solr/latest/configuration-guide/libs.html -->
+        <!-- <filter name="icuFolding"/> -->
         <filter name="snowballPorter"/>
       </analyzer>
     </fieldType>
