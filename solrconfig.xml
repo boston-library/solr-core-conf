@@ -774,6 +774,7 @@ http://wiki.apache.org/solr/LocalParams
         identifier_matrix_number_ssim
         identifier_music_plate_ssim
         identifier_music_publisher_ssim
+        identifier_oclcnum_ssim
         identifier_sici_ssim
         identifier_videorecording_ssim
         identifier_ia_id_ssi
@@ -868,6 +869,7 @@ http://wiki.apache.org/solr/LocalParams
         identifier_matrix_number_ssim
         identifier_music_plate_ssim
         identifier_music_publisher_ssim
+        identifier_oclcnum_ssim
         identifier_sici_ssim
         identifier_videorecording_ssim
         identifier_ia_id_ssi
@@ -1074,6 +1076,7 @@ http://wiki.apache.org/solr/LocalParams
         identifier_matrix_number_ssim
         identifier_music_plate_ssim
         identifier_music_publisher_ssim
+        identifier_oclcnum_ssim
         identifier_sici_ssim
         identifier_videorecording_ssim
         identifier_ia_id_ssi
@@ -1168,6 +1171,7 @@ http://wiki.apache.org/solr/LocalParams
         identifier_matrix_number_ssim
         identifier_music_plate_ssim
         identifier_music_publisher_ssim
+        identifier_oclcnum_ssim
         identifier_sici_ssim
         identifier_videorecording_ssim
         identifier_ia_id_ssi
